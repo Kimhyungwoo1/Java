@@ -28,7 +28,7 @@ public class Gugudan {
 			
 			//4. i 번째 행의 배열 원소 개수 만큼 j를 증가시키며 반복한다.
 			while (j < colCount) {
-				System.out.print(numbers[i][j]);
+				System.out.print(numbers[i][j] + " ");
 				j++;
 			}
 			i++;
