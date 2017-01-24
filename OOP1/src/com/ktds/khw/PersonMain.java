@@ -5,13 +5,13 @@ public class PersonMain {
 	public static void main(String[] args){
 		
 		Person khw = new Person();
-		khw.setName("김형우");
-		khw.setJob("프로그래머");
+		khw.getName("김형우");
+		khw.getJob("프로그래머");
 		khw.introduce();
 		
 		Person wie = new Person();
-		wie.setName("유정이");
-		wie.setJob("백수");
+		wie.getName("유정이");
+		wie.getJob("백수");
 		wie.introduce();
 		
 		Person unknown = new Person();

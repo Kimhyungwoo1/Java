@@ -24,16 +24,31 @@ public class Person {
 	 */
 	public Person(String name, String job) {
 		System.out.println("Person 생성자 실행됨!");
-		getName(name);
-		getJob(job);
+		setName(name);
+		setJob(job);
 	}
 	
-	public void getName(String name){
+	public void setName(String name){
 		this.name = name;
 	}
 	
-	public void getJob(String job){
+	public void setJob(String job){
 		this.job = job;
+	}
+	
+	/*
+	 * public 가져올_맴버변수타입 set가져올_명(){
+	 * 		return 가져올_맴버변수;
+	 * 
+	 * }
+	 */
+	public String getName() {
+		return this.name;
+		
+	}
+	
+	public String getjob() {
+		return this.job;
 	}
 	
 	public void introduce(){
