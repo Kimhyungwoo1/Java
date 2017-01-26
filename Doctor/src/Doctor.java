@@ -6,7 +6,7 @@ public class Doctor {
 	
 	//환자 병적조회
 	void inquery(){
-		System.out.println(computer+"로 환자의 병적을 조회합니다.");
+		System.out.println(computer+"로 환자의 병적을 조회합니다.□■");
 	}
 	//환자 진료
 	void tretment(){

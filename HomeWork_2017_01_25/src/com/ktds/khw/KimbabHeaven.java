@@ -68,25 +68,30 @@ public class KimbabHeaven {
 			
 			if (buyerSelect == 1) {
 				if (this.kimBab > 0) {
-					System.out.println("=====================================");
+					//System.out.println("-------------------------------------");
 					System.out.println(" 3500원 입니다.");
-					System.out.println("=====================================");
+					//System.out.println("-------------------------------------");
 					kimBab--;
 					kimbobTotal += this.KIMBOB;
 					buyer.pay(KIMBOB);
 					buyer.countMenu(buyerSelect);
 				}
+				else{
+					System.out.println("김밥이 없습니다. 다른메뉴를 선택해 주세요!");
+				}
 			} 
 			else if (buyerSelect == 2) {
 				if (this.meatBowl > 0) {
-					System.out.println("=====================================");
+					//System.out.println("-------------------------------------");
 					System.out.println(" 6500원 입니다.");
-					System.out.println("=====================================");
+					//System.out.println("-------------------------------------");
 					meatBowl--;
 					meatBowlTotal += this.MEATBOWL;
 					buyer.pay(MEATBOWL);
 					buyer.countMenu(buyerSelect);
-					
+				}
+				else{
+					System.out.println("제육볶음이 없습니다. 다른메뉴를 선택해 주세요!");
 				}
 			} 
 			else if (buyerSelect == 999) {
