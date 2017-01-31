@@ -1,6 +1,7 @@
 package com.ktds.khw.seller;
 
 import com.ktds.khw.buyer.Buyer;
+import com.ktds.khw.vo.BasketVo;
 
 public class Seller {
 
@@ -22,28 +23,14 @@ public class Seller {
 	public Seller(int productQuantity, int money) {
 		System.out.println("판매자를 생성합니다.");
 
-		setProductQuantity(productQuantity);
-		setMoney(money);
+		basketVo.setProductQuantity(productQuantity);
+		basketVo.setMoney(money);
 
 		System.out.println(this);
 
 	}
 
-	public void setMoney(int money) {
-		this.money = money;
-	}
-
-	public int getMoney() {
-		return this.money;
-	}
-
-	public void setProductQuantity(int productQuantity) {
-		this.productQuantity = productQuantity;
-	}
-
-	public int getProductQuantity() {
-		return this.productQuantity;
-	}
+	private BasketVo basketVo; 
 
 	/**
 	 * 판매하기
@@ -51,13 +38,13 @@ public class Seller {
 	public void sell(Buyer buyer) {
 		if (!isSoldOut()) {
 			// 판매자가 가진 상품의 개수에서 하나를 뺀다.
-			this.productQuantity--;
+			basketVo.productQuantity();
 
 			// 구매자는 돈을 지불한다.
 			buyer.pay(PRICE);
 
 			// 판매자가 가진 금액에서 상품의 가격만큼 더한다.
-			this.money += PRICE;
+			basketVo.plusMoney(money);;
 		}
 	}
 

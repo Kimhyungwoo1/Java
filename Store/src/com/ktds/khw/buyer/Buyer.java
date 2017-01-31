@@ -1,6 +1,7 @@
 package com.ktds.khw.buyer;
 
 import com.ktds.khw.seller.Seller;
+import com.ktds.khw.vo.BasketVo;
 
 /**
  * Seller에게 상품을 구매하고 금액을 Seller에게 지불한다.
@@ -29,28 +30,14 @@ public class Buyer {
 		System.out.println("구매자를 생성합니다!");
 		
 		//초기값 셋팅
-		setProductQuantity(productQuantity);
-		setMoney(money);
+		basketVo.setProductQuantity(productQuantity);
+		basketVo.setMoney(money);
 		
 		//현황 출력하기
 		System.out.println(this);
 	}
 	
-	public void setProductQuantity(int productQuantity){
-		this.productQuantity = productQuantity;
-		
-	}
-	public int getProductQuantity(){
-		return this.productQuantity;
-	}
-	
-	public void setMoney(int money){
-		this.money = money;
-		
-	}
-	public int getMoney() {
-		return this.money;
-	}
+	private BasketVo basketVo;
 	
 	/**
 	 * 구매하기
