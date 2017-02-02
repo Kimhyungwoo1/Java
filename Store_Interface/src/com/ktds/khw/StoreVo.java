@@ -39,8 +39,8 @@ public class StoreVo {
 		this.productQuantity--;
 	}
 	
-	public String toString(){
+	/*public String toString(){
 		String message = String.format("", args)
-	}
+	}*/
 
 }
