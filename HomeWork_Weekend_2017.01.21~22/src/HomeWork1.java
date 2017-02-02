@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import sun.security.krb5.internal.PAData.SaltAndParams;
-
 public class HomeWork1 {
 
 	public static void main(String[] args) {
