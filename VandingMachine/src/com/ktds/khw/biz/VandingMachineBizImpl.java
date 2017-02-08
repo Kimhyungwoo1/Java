@@ -10,17 +10,9 @@ import com.ktds.khw.vo.VandingMachineVO;
 public class VandingMachineBizImpl implements VandingMachineBiz {
 	
 	VandingMachineDaoImpl vandingMachineDaoImpl;
-	List<HumanVO> humanList;
-	List<VandingMachineVO> vandingMachineList;
-	VandingMachineVO vandingMachineVO;
-	HumanVO humanVO;
 	
 	public VandingMachineBizImpl() {
 		vandingMachineDaoImpl = new VandingMachineDaoImpl();
-		vandingMachineVO = new VandingMachineVO();
-		humanVO = new HumanVO();
-		humanList = new ArrayList<HumanVO>();
-		vandingMachineList = new ArrayList<VandingMachineVO>();
 	}
 	
 	@Override
