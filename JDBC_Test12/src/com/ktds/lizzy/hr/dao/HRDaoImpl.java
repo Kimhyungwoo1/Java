@@ -16,7 +16,8 @@ import com.ktds.lizzy.hr.vo.*;
 
 public class HRDaoImpl extends JDBCDaoSupport implements HRDao {
 	
- @Override
+ @SuppressWarnings("unchecked")
+@Override
     public List<EmployeesVO> getAllEmployees() {
 	 	
 	    return selectList(new QueryHandler() {
@@ -47,6 +48,7 @@ public class HRDaoImpl extends JDBCDaoSupport implements HRDao {
         
     }
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<DepartmentVO> getAllDepartments() {
 		
@@ -78,6 +80,7 @@ public class HRDaoImpl extends JDBCDaoSupport implements HRDao {
 		
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<EmployeesVO> getAllEmployeesWithDepartments() {
 		
@@ -115,6 +118,7 @@ public class HRDaoImpl extends JDBCDaoSupport implements HRDao {
 		
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<DepartmentVO> getAllDepartmentsWithLocations() {
 		
@@ -148,6 +152,7 @@ public class HRDaoImpl extends JDBCDaoSupport implements HRDao {
 		
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<CountriesVO> getAllCountriesWithRegions() {
 		
